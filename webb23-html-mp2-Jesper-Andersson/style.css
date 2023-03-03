@@ -1,0 +1,583 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+html{
+font-size: 62.5%;
+}
+
+body{
+font-family: permanent marker, sans-serif;
+background-color: rgb(27, 27, 27);
+flex-direction: column;
+display: flex;
+min-height: 100vh;
+}
+
+/*navbar*/
+
+.header{
+height: 10vh;
+}
+
+.navbar{
+height: 110px;
+width: 100%;
+background-color:#000000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 40px;
+z-index: 10;
+position: fixed;
+}
+
+.navbar-box{
+display: flex;
+align-items: center;
+font-size: 2rem;
+color: #fff;
+}
+
+.heading-tertiary{
+font-size: 3.5rem;
+}
+
+.navbar-list{
+list-style: none;
+font-size: 2rem;
+}
+
+.navbar-item{
+display: inline-block;
+}
+
+.navbar-link:visited, .navbar-link:link{
+text-decoration: none;
+color: #fff;
+padding: 3rem;
+transition: all .2s ease;
+}
+
+.navbar-link:hover{
+background-color:#ffa500;
+color: #fff;
+}
+
+.navbar-link-book:visited,
+.navbar-link-book:link{
+text-decoration: none;
+color: #fff;
+padding: 2rem 3.5rem;
+border-radius: 200px;
+box-shadow: 0 0 1rem rgba(255,255,255 .5);
+transition: all .4s ease;
+}
+
+.navbar-link-book:hover{
+background-color: #ffa500;
+color: #fff;
+}
+
+.toggle{
+height: 5rem;
+width: 5rem;
+display: none;
+}
+
+.toggle div{
+height: 4px;
+width: 100%;
+background-color: #fff;
+margin: 1rem;
+}
+
+.header-container{
+width: 100%;
+height: 100%;
+background-size: cover;
+color: #fff;
+}
+
+.video{   /* detta var nytt för mig, ville göra något mer än en bakgrundsbild, så fick kolla igenom w3 och lite andra länkar för att få ihop det, men tyckte det blev bra och ger en annan stil till hemsidan */
+width: 100%;
+height: 100%;
+background-color: #00000066;
+position: absolute;
+
+right: 0;
+}
+
+#video{
+width: 100%;
+height: 90%;
+object-fit: cover;
+position: relative;
+z-index: -1;
+}
+
+.header-box{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+text-transform: uppercase;
+color: #fff;
+}
+
+.heading-primary{
+font-size: 6.5rem;
+font-weight: 600;
+letter-spacing: 3px;
+}
+
+#restaurant{
+color: #ffa500;
+font-weight: 800;
+font-size: 8rem;
+}
+
+.lead{
+font-size: 1.9rem;
+font-weight: 600;
+letter-spacing: 4px;
+}
+
+.book-now:visited,
+.book-now:link{
+text-decoration: none;
+display: inline-block;
+color: #fff;
+font-size: 2rem;
+padding: 2rem;
+margin-top: 4rem;
+border: 1px solid #fff;
+border-radius: 100px;
+transition: all .3s ease;
+box-shadow: 0 1rem 1rem rgba(240, 107, 55, .1);
+text-shadow: 0 1rem 1rem rgba(0, 0, 0, .6);
+}
+
+.book-now:hover{
+background-color: #ffa500;
+border: 1px solid #fff;
+box-shadow: 0 0 2rem #f06b37cc;
+}
+
+/*MENU*/
+
+.menu{
+width: 100%;
+padding: 10rem 5rem;
+background-image: linear-gradient(to right bottom, #ff5100, #010c0180);
+}
+
+.menu-heading{
+font-size: 12rem;
+text-align: center;
+text-shadow: 0 0 1rem #030303e6;
+text-transform: uppercase;
+color: #ff6200;
+font-weight: 800;
+}
+
+.menu-grid{
+display: grid;
+grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(3,1fr);
+justify-self: center;
+grid-gap: 2rem;
+}
+
+.heading-secondary{
+font-size: 7rem;
+text-transform: uppercase;
+color: #fff;
+text-align:center ;
+}
+
+.menu-img{
+height: 50%;
+width: 100%;
+background-size: cover;
+background-image: url(/bilder/Meny.1.jpeg) ;
+}
+.menu-img2{
+height: 50%;
+width: 100%;
+background-size: cover;
+background-image: url(/bilder/Meny.2.jpeg) ;
+}
+.menu-img3{
+height: 50%;
+width: 100%;
+background-size: cover;
+background-image: url(/bilder/Meny.3.jpeg) ;
+}
+.menu-img4{
+height: 50%;
+width: 100%;
+background-size: cover;
+background-image: url(/bilder/Meny.4.jpeg) ;
+}
+.menu-img5{
+height: 50%;
+width: 100%;
+background-size: cover;
+background-image: url(/bilder/Meny.5.jpeg) ;
+}
+.menu-img6{
+height: 50%;
+width: 100%;
+background-size: cover;
+background-image: url(/bilder/7.jpg) ;
+}
+
+.menu-container{
+width: 100%;
+height: 50rem;
+background-color: #fff;
+border-radius: 5px;
+overflow: hidden;
+box-shadow: 0 0 2rem #0a0a0a;
+transition: all .4s ease;
+}
+
+.menu-container:hover{
+box-shadow: 0 0 5rem #0a0a0a66;
+transform: scale(1.07);
+}
+
+.menu-p{
+font-size: 1.4rem;
+padding: 1rem;
+text-align: center;
+}
+
+.menu-title{
+font-size: 3rem;
+text-align: center;
+}
+
+.price{
+font-size: 3rem;
+margin-top: 1rem;
+text-align: center;
+color: #ffa500;
+text-shadow: 0 .4rem 2rem #5c4e4e66;
+}
+
+/*KONTAKT*/
+
+.hero{
+width: 100%;
+height: 100vh;
+background-image: url(/bilder/7.jpg);
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container{
+align-items: center;
+justify-content: center;
+}
+
+form{
+width: 100%;
+max-width: 600px;
+}
+
+.input-group{
+margin-bottom: 30px;
+position: relative;
+}
+
+input, textarea{
+width: 100%;
+padding: 10px;
+outline: 0;
+border:1px solid #fff ;
+color: #fff;
+background: #000000;
+font-size: 15px;
+}
+
+input[type="date"]{
+padding: 15px;
+position: relative;
+top: 0;
+left: 0;
+color: #fff;
+font-size: 18px;
+border: none;
+outline: none;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+input[type="time"]{
+padding: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+::-webkit-calendar-picker-indicator{
+background-color: #fff;
+padding: 5px;
+cursor: pointer;
+border-radius: 3px;
+}
+
+label{
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+padding: 10px;
+color: #fff;
+cursor: text;
+transition: 0.2s;
+}
+
+button{
+padding: 10px 0;
+color: #fff;
+outline: none;
+background: #000000;
+border: 1px solid #fff;
+width: 100%;
+cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+top:-35px;
+font-size: 14px;
+}
+
+.row{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.row .input-group{
+flex-basis: 48%;
+}
+
+/*FOOTER*/
+
+.page-container{
+flex: 1;
+}
+
+
+.footer-container {
+    position: sticky;
+    text-align: center;
+    top: 100%;
+
+}
+
+.footer-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact-links {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.link {
+    color: #f0eff6;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-links {
+    display: inline-block;
+}
+
+.social-link {
+    margin-right: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border: 0;
+}
+i{
+    font-size: 30px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) { /* tycker alltid dessa är knepiga, glömde att göra den från början men ska börja anpassa det direkt från början nästa gång*/
+    .footer-heading {
+        font-size: 12px;
+    }
+
+    .contact-links {
+        font-size: 10px;
+    }
+
+    .social-link {
+        margin-right: 5px;
+    }
+
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
+
+
+html {
+    font-size: 10px;
+    /* 1rem = 10px */
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 5px;
+       
+    }
+}
+
+body {
+    font-family: permanent marker, sans-serif;
+    background-color: rgb(27, 27, 27);
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.heading-primary{
+margin-top: 90rem;
+}
+
+.header {
+    height: 10vh;
+}
+
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 10;
+    position: fixed;
+}
+
+.navbar-box {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.heading-tertiary {
+    font-size: 3.5rem;
+}
+
+.navbar-list {
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.navbar-item {
+    display: inline-block;
+}
+
+.navbar-link:visited,
+.navbar-link:link {
+    text-decoration: none;
+    color: #fff;
+    padding: 2rem;
+    transition: all .2s ease;
+}
+
+.navbar-link:hover {
+    background-color: #ffa500;
+    color: #fff;
+}
+
+.navbar-link-book:visited,
+.navbar-link-book:link {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem 2.5rem;
+    border-radius: 200px;
+    box-shadow: 0 0 .5rem rgba(255, 255, 255 .5);
+    transition: all .4s ease;
+}
+
+.navbar-link-book:hover {
+    background-color: #ffa500;
+    color: #fff;
+}
+
+.toggle {
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.toggle div {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    margin: .8rem;
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: #fff;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    background-color: #00000066;
+    position: absolute;
+    right: 0;
+    
+}
+
+#video {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.header-box {
+    position: absolute;
+    top:auto
+}
